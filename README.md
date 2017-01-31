@@ -9,7 +9,7 @@ Dependecy : Jquery {as usual}
  <div class="video-container marg-med">
     <!-- Video Player -->
     <video class="vid" poster="" controls>
-      <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"/>
+      <source src="PickYOURURL.mp4" type="video/mp4"/>
     </video>           
     <!-- Video Player Control-->
     <div class="video-controls">
