@@ -39,6 +39,7 @@ Dependecy : Jquery {as usual}
 
     </div>
   </div>
+```
 
 You can customize it whatever you want. 
 
