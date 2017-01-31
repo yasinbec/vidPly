@@ -1,0 +1,130 @@
+.video-container {
+
+  border-top: $base-highlight solid 5px;
+  margin-bottom: 40px;
+  width: 100%;
+
+  @include media-query(desktop) {
+    width: 95%;
+  }
+
+  video {
+    position: static;
+    width: 100%;
+  }
+
+  .video-controls {
+    background: rgba(45, 204, 211, 1);
+    display: block;
+    margin-top: -1px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 4px 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+
+    @include media-query(tablet) {
+      margin-top: -6px;
+    }
+  }
+
+  button {
+    background: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    height: 22px;
+    margin-left: 5px;
+    padding: 0;
+    position: relative;
+    width: 30px;
+
+    &:hover {
+      color: #999;
+    }
+
+    img {
+      max-width: 20px;
+    }
+  }
+
+  /* Gets rid of the outline around buttons in Firefox. */
+  /*input[type="button"]::-moz-focus-inner,
+  button::-moz-focus-inner,
+  button::-webkit-focus-inner
+  {
+    border: 0 none;
+    padding: 0;
+  }*/
+
+  .play {
+    font-size: 20px;
+    top: -2px;
+  }
+
+  .playing {
+    font-size: 12px;
+    left: -2px;
+    top: -2px;
+  }
+
+  .mute {
+    top: 0;
+  }
+
+  /* When in full screen mode */
+  .full-screen {
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+    top: 2px;
+  }
+
+  /* PROGRESS BAR */
+  .progress {
+    cursor: pointer;
+    margin: 5px 10px;
+    padding-bottom: 5px;
+
+    .progress-box {
+      background-color: #2a2f39;
+      border: 1px solid #292929;
+      float: left;
+      height: 5px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .play-progress {
+      background-color: #fff;
+      display: block;
+      height: 5px;
+      width: 0;
+    }
+  }
+
+  /* Volume Bar */
+  .volume {
+    cursor: pointer;
+
+    .volume-box {
+      background-color: #2a2f39;
+      border: 1px solid #292929;
+      float: left;
+      height: 10px;
+      margin: 5px 5px 0 0;
+      overflow: hidden;
+      width: 50px;
+    }
+
+    .volume-progress {
+      background-color: #fff;
+      display: block;
+      height: 10px;
+      width: 0;
+    }
+  }
+}
