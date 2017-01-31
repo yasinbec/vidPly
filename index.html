@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VidPly Demo</title>
+  <!-- CSS version of SCSS -->
+  <!-- please convert scss to CSS -->
+  <link rel="stylesheet" type="text/css" href="vidPly.css">
+</head>
+<body>
+  <!-- Video -->
+  <div class="video-container marg-med">
+    <!-- Video Player -->
+    <video class="vid" poster="" controls>
+      <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"/>
+    </video>           
+    <!-- Video Player Control-->
+    <div class="video-controls">
+
+      <!-- Progress Bar -->
+      <div class="progress">
+        <div class="progress-box">
+            <span class="play-progress"></span>
+        </div>
+      </div>
+
+      <!-- Play Button -->
+      <button class="play" title="Play"> &#x25BA; </button>
+
+      <!-- Mute -->
+      <button class="mute" title="mute"> <img src="img/audio-icon.png" alt="" /></button>
+
+      <!-- Volume -->
+      <div class="volume">
+        <div class="volume-box">
+            <span class="volume-progress"></span>
+        </div>
+      </div>
+
+      <!-- FullScreen -->
+      <button class="full-screen" title="FullScreen Toggle"> <img src="img/fullscreen-icon.png" alt="" /> </button>
+
+    </div>
+  </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="vidPly.js"></script>
+<script type="text/javascript">
+    
+    vidPly.video.init();
+
+</script>
+</body>
+</html>
