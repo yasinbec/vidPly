@@ -1,3 +1,36 @@
+$base-highlight: blue;
+$desktop: 1130px;
+$tablet: 768px;
+
+
+@function get-breakpoint($canvas) {
+  $rtn: 0;
+  @if $canvas == mobilemed {
+    $rtn: $mobilemed;
+  } @else if $canvas == mobilelarge {
+    $rtn: $mobilelarge;
+  } @else if $canvas == tablet {
+    $rtn: $tablet;
+  } @else if $canvas == desktop {
+    $rtn: $desktop;
+  } @else if $canvas == wrapper {
+    $rtn: $wrapper;
+  }
+  @return $rtn;
+}
+
+@mixin media-query($canvas) {
+  @if $canvas == retina {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @content;
+    }
+  } @else {
+    @media all and (min-width: get-breakpoint($canvas)) {
+      @content;
+    }
+  }
+}
+
 .video-container {
 
   border-top: $base-highlight solid 5px;
