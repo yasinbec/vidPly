@@ -1,5 +1,5 @@
-# vidPly
-HTML5 Video Player
+# vidPly.JS
+Native HTML5 Video Player Customization
 
 Responsive Native HTML5 Player customization with SCSS. 
 Dependecy : Jquery {as usual}
