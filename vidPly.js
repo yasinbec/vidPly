@@ -152,11 +152,11 @@
         e.preventDefault();
         if(vid.muted){
           vid.muted = false;
-          $(this).find('img').attr('src', '/_Assets/img/audio-icon.png');
+          $(this).find('img').attr('src', 'img/audio-icon.png');
           volumeProgress.css({'width': volumeHolder.outerWidth()});
         } else {
           vid.muted = true;
-          $(this).find('img').attr('src', '/_Assets/img/audio-no-icon.png');
+          $(this).find('img').attr('src', 'img/audio-no-icon.png');
           volumeProgress.css({'width': 0});
         }
       });
@@ -214,7 +214,6 @@
       var self = this;
       $('.vid').each(function () {
         self.setupVideo($(this));
-        self.setupVideoWTs($(this));
       });
     }
 
