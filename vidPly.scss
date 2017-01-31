@@ -2,7 +2,6 @@ $base-highlight: blue;
 $desktop: 1130px;
 $tablet: 768px;
 
-
 @function get-breakpoint($canvas) {
   $rtn: 0;
   @if $canvas == mobilemed {
