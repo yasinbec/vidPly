@@ -1,7 +1,6 @@
 (function(window, undefined) {
   'use strict';
-
-  // Basaglar is our main project namespace.
+  
   var vidPly = window.vidPly || {};
 
   vidPly.video = {
